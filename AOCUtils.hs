@@ -26,3 +26,7 @@ strToBin (x:xs) = (i * 2 ^ length xs) + strToBin xs
   where
     i = read [x]
 strToBin [] = 0
+
+-- Calculate range from lowest of a,b to largest of a,b
+intRange :: Int -> Int -> [Int]
+intRange a b = [min a b .. max a b]
